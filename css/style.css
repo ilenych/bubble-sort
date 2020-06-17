@@ -1,0 +1,107 @@
+body {
+  background: rgb(165, 252, 106);
+  background: linear-gradient(
+    90deg,
+    rgba(165, 252, 106, 1) 0%,
+    rgba(66, 170, 57, 1) 48%,
+    rgba(5, 103, 33, 1) 90%
+  );
+}
+.wrap {
+  cursor: default;
+}
+
+/* Container */
+.container {
+  margin-bottom: 256px;
+}
+
+.container__title {
+  font-size: 40px;
+}
+.container__description {
+  font-size: 30px;
+}
+
+.title__settings {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  color: #001c2e;
+}
+.sourse__title {
+  font-size: 30px;
+}
+/* Sourse cards */
+.sourseCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5px;
+}
+.sourseCards .cards-row {
+  width: 40px;
+  height: 60px;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+/* Sort cards */
+.sortCards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+}
+.cards-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border: 4px solid #001c2e;
+  border-radius: 5px;
+  color: #001c2e;
+}
+.cards-row {
+  width: 120px;
+  height: 200px;
+  margin: 0 15px;
+  font-size: 40px;
+}
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.buttons__settings {
+  width: 320px;
+  height: 64px;
+  margin: 16px 25px;
+  font-size: 36px;
+  border-radius: 24px;
+}
+.buttons__settings {
+  background-color: #001c2e;
+  color: white;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  transform: scale(1);
+}
+.buttons__settings:hover {
+  transform: scale(1.1);
+}
+.buttons__settings:active,
+.buttons__settings:focus {
+  outline: none;
+}
+.buttons__settings:disabled {
+  background-color: lightgray;
+  cursor: default;
+  color: #001c2e;
+}
